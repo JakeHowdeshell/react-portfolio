@@ -33,9 +33,13 @@ function Form() {
       setErrorMessage("Please provide a valid email address");
       return;
     }
+    if (!message) {
+        setErrorMessage("Please provide a message");
+        return;
+      }
     alert(`Thank you ${name} I will get back to you as soon as possible!`);
    
-    // need to have it send an email
+    // need to have it send an email?
 
     setName("");
     setEmail("");
