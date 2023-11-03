@@ -1,19 +1,32 @@
+import DownloadFile from '../components/UI/DownloadFile'
+
 export default function Resume() {
     return (
       <div>
-        <h1>About Page</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus.
-        </p>
+        <h4>Resume</h4>
+       <DownloadFile/>
+       <div>
+        <h6>Front-end Proficiencies</h6><ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>responsive design</li>
+        <li>React</li>
+        <li>Bootstrap</li>
+       </ul>
+       </div>
+       <div>
+        <h6>Back-end Proficiencies</h6><ul>
+        <li>API</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>MySQL Sequilize</li>
+        <li>MongoDB, Mongoose</li>
+        <li>REST</li>
+        <li>GraphQL</li>
+       </ul>
+       </div>
       </div>
     );
   }
