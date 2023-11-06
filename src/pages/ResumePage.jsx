@@ -3,7 +3,7 @@ import DownloadFile from '../components/UI/DownloadFile'
 export default function Resume() {
     return (
       <div>
-        <h4>Resume</h4>
+        <h4 className="page-title">Resume</h4>
        <DownloadFile/>
        <div>
         <h6>Front-end Proficiencies</h6><ul>
