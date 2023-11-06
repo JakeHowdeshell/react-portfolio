@@ -1,8 +1,15 @@
 export default function About() {
-    return (
-      <div>
-        {/* need to add am image of myself */}
-        <h4>About Me</h4>
+  return (
+    <div>
+      <h4 className="page-title">About Me</h4>
+      <img
+        className="profile-pic"
+        width="96"
+        height="96"
+        src="/images/profile-pic.jpeg"
+        alt="Jake-Howdeshell-profile-picture"
+      />
+      <div className="about-info">
         <p>
           Hello, my name is Jake Howdeshell welcome to my coding portfolio page.
           A few fun facts about me are that I am task oriented, enjoy breaking
@@ -19,9 +26,10 @@ export default function About() {
           lot of enjoyment in the problem solving aspect and the limitmess
           potential to create and recreate helpful tools, applications, and
           websites. Please check out my current work, contact information, and
-          resume provided below. I am currently on the hunt for new and exciting
-          work opportunities in the tech field!
+          resume provided. I am currently on the hunt for new and exciting work
+          opportunities in the tech field!
         </p>
       </div>
-    );
-  }
+    </div>
+  );
+}
