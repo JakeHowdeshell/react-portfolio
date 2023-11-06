@@ -53,10 +53,12 @@ const projects = [
 export default function Portfolio() {
   return (
     <div>
-      <h4>Portfolio</h4>
+      <h4 className="page-title">Portfolio</h4>
+      <div className="card-container">
       {projects.map((project) => (
         <Project key={project.id} project={project} />
       ))}
+      </div>
     </div>
   );
 }
