@@ -1,3 +1,4 @@
+// links the corresponding image to GitHub, Linked In, and Instagram
 export default function Footer({}) {
   return (
     <div>
