@@ -19,6 +19,18 @@
   margin-right: auto;
   color: rgb(75, 199, 244);
 }
+.nav-item .nav-link{
+  font-size: larger;
+  font-style: italic;
+  color: orange;
+}
+.nav-item .nav-link-active {
+  text-decoration: none;
+  font-size: larger;
+  font-style: italic;
+  color: white;
+}
+
 .page-title {
   margin: 40px;
 }
@@ -53,10 +65,25 @@
   flex-direction: row;
   z-index: 2;
   display: none;
+  
+}
+.card .name h4 {
+  color: orange;
+}
+.card .name a {
+  text-decoration: none;
 }
 
 .card:hover .name {
   display: flex;
+}
+
+.card .name h4:hover {
+color: purple;
+}
+
+.card .name img:hover {
+  filter: grayscale(0);
 }
 
 .card .main {
@@ -66,10 +93,49 @@
   display: block;
 }
 .card:hover .main {
-  /* Semi-transparent background color (adjust the alpha value to control opacity) */
   filter: blur(7px);
 }
 
+/* Contact Styling */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.container .form {
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+.container .form h6 {
+  margin-top: 10px;
+}
+
+.container .form input {
+  width: 500px
+}
+.container .form .message {
+  padding-bottom: 50px;
+  margin-bottom: 5px;
+}
+.container .form button {
+  width: 500px;
+  border-radius: 7px;
+}
+
+/* Resume Styling */
+.resume-link {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+.profeciencies {
+    margin: 0 0 40px 40px;
+}
 /* Footer Styling */
 footer {
   display: flex;
