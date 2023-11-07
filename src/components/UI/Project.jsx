@@ -1,3 +1,4 @@
+// takes the props for each provided project and adds them to the card
 export default function Project(props) {
   console.log(props);
   return (
