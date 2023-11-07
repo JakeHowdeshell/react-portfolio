@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 import { validateEmail } from "../utils/helpers";
-
+// uses a blank form as the initial use state
 function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+// checks the input to make sure the value is correct
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
@@ -21,7 +21,8 @@ function Form() {
       setMessage(inputValue);
     }
   };
-
+// if the values are not correct or present an error is provided, 
+// if all correct values are present the user is alerted and the form is reset
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
@@ -38,8 +39,6 @@ function Form() {
         return;
       }
     alert(`Thank you ${name} I will get back to you as soon as possible!`);
-   
-    // need to have it send an email?
 
     setName("");
     setEmail("");
@@ -66,6 +65,7 @@ function Form() {
         />
         <h6>Message:</h6>
         <input
+        className="message"
           value={message}
           name="message"
           onChange={handleInputChange}
