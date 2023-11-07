@@ -4,6 +4,7 @@ export default function Resume() {
     return (
       <div>
         <h4 className="page-title">Resume</h4>
+        <div className="profeciencies">
        <DownloadFile/>
        <div>
         <h6>Front-end Proficiencies</h6><ul>
@@ -26,6 +27,7 @@ export default function Resume() {
         <li>REST</li>
         <li>GraphQL</li>
        </ul>
+       </div>
        </div>
       </div>
     );
