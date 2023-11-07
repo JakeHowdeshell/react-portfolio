@@ -1,16 +1,15 @@
+// creates a file using the resume uploded to the assets folder
 export default function DownloadFile() {
     const createFile = () => {
-  const fileUrl = "";
+  const fileUrl = "src/assets/resume.pdf";
   const link = document.createElement("a");
   link.href = fileUrl;
-  link.download = "downloaded_file_name.pdf";
+  link.download = "jakeHowdeshellResume.pdf";
   link.click();
 }
   return (
     <div> 
-     Download my <button onClick={createFile}>resume</button>
+     Download my: <button className="resume-link" onClick={createFile}>resume</button>
     </div>
   );
 }
-
-// change the button to a link
