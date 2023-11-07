@@ -43,11 +43,11 @@ const projects = [
   },
   {
     id: 6,
-    name: "another App",
-    url: "this test",
-    image: "",
-    alt: "",
-    gitHub: "",
+    name: "HTML Portfolio",
+    url: "https://jakehowdeshell.github.io/professional-portfolio/",
+    image: "./images/HTMLPortfolio.png",
+    alt: "Portfolio application deployed on Github Pages",
+    gitHub: "https://github.com/JakeHowdeshell/professional-portfolio.git",
   }
 ];
 export default function Portfolio() {
