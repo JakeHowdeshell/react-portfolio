@@ -142,7 +142,7 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 350px){
     .title {
         flex-direction: column;
         align-content: center;
